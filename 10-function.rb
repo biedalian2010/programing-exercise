@@ -24,6 +24,11 @@ def find_max(x, y, z)
     end
 end
 
+def find_max1(x,y,z)
+  [x,y,z].max
+
+end
+
 print "请输入一个数字x，然后按 Enter: "
 x = gets.to_f
 
@@ -36,5 +41,8 @@ z = gets.to_f
 # ....
 
 answer = find_max(x,y,z)
+answer1 = find_max1(x,y,z)
 
 puts "最大的数是 #{answer}?请重新输入"
+
+puts "最大的数是 #{answer1}?请重新输入"

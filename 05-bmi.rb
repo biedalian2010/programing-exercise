@@ -11,15 +11,15 @@ print "请输入您的身高(厘米)，然后按 Enter: "
 height = gets
 
 # .....
-bmi = weight.to_f * 10000 / (height.to_f * height.to_f)
+bmi = weight.to_f * 10000 / (height.to_f * height.to_f)         #此处为何体重需要乘以10000,不是特别理解,只知道bmi运算会产生小数,所以需要将数据类型转化为float
 
 
 puts "您的 BMI 是:#{bmi}"
 
-if bmi <18.5
-  puts "您的 BMI 结果是: 过轻"
-elsif bmi >= 24
-  puts "您的 BMI 结果是: 过重"
+if bmi <18.5                        #当bmi小于18.5时
+  puts "您的 BMI 结果是: 过轻"        #终端输出过轻
+elsif bmi >= 24                     #当bmi大于等于24时
+  puts "您的 BMI 结果是: 过重"        # 终端显示过重
 else
-  puts "您的 BMI 结果是: 正常"
+  puts "您的 BMI 结果是: 正常"       #其它运算结果,终端显示正常
 end

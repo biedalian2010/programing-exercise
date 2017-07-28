@@ -18,7 +18,7 @@ z = gets
 # ....
 if x.to_i < 0
   puts "结果是A"
-elsif x.to_i > 0 && y.to_i > 0 && z.to_i > 0
+elsif x.to_i > 0 && y.to_i > 0 && z.to_i > 0  #使用&& 表示并且的意思,可以用于多个条件的判断
   puts "结果是B"
 elsif x.to_i > 0 && y.to_i > 0 && z.to_i < 0
   puts "结果是C"
