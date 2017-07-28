@@ -10,7 +10,7 @@ print "请输入一个数字z，然后按 Enter: "
 z = gets
 
 # ....
-if x.to_f > y.to_f && y.to_f > z.to_f && x.to_f > z.to_f      #321
+if x.to_f > y.to_f && y.to_f > z.to_f && x.to_f > z.to_f      #321      我认为三个比较三个数的大小有如下9中情况,可能对"最"的理解有点钻牛角尖
   puts "x.y.z 中x最大"
 elsif x.to_f > y.to_f && y.to_f == z.to_f                     #211
   puts "x.y.z 中x最大"
@@ -31,3 +31,7 @@ elsif x.to_f < y.to_f && y.to_f == z.to_f                     #122
 else
     puts "x.y.z 中三个数字相等"
   end
+----------------------------------------------------------------------
+#当然你会觉得上面的逻辑很繁琐
+result = [x,y,z].max
+puts "最大的数是#{result}"  #简单粗暴

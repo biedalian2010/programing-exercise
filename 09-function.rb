@@ -5,7 +5,7 @@ def calculate_area(a, b)
 end
 
 print "请输入直角三角形的高，然后按 Enter: "
-a = gets.to_f
+a = gets.to_f                                   #可以在从终端获取的时候就将这个字符串转化为其它数据类型
 
 print "请输入直角三角形的底边，然后按 Enter: "
 b = gets.to_f
